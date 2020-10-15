@@ -1,31 +1,34 @@
 
-# ReadME
-<hr>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Readme Generator
 
 ## Description: 
-    create a readme generator
+    Create a generator to assist with automating the task of creating readme's
 <hr>
     
 ## Table of Contents
-    Installation,Usage,License,Contribution,Tests,Questions
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contribution](#Contribution)
+* [Tests](#Tests)
+* [Questions](#Questions)
 <hr>
     
 ## Installation
-    None
+    npm install
 <hr>
     
 ## Usage
-    N/a
-<hr>
-    
-## License
-    MIT
+    node index.js
 <hr>
     
 ## Test
-    N/a
+    npm test
 <hr>
     
 ## Questions
-    None
+    Contact me at: 
+    https://github.com/ShueMoua
+    Email Address: moua_shuelong@yahoo.com
     

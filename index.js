@@ -67,8 +67,13 @@ inquirer.prompt([{
         {
             //Questions, Add Github username with link to your profile && add email address with instructions on how to reach me with additional quetsions
             type: "input",
-            name: "questions",
-            message: ""
+            name: "Github",
+            message: "What is your GitHub username?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email address?"
         }
     ])
     .then(function(response) {
@@ -86,15 +91,20 @@ inquirer.prompt([{
 
 function generateMD(response) {
     return `
+[![License: ${response.license}](https://img.shields.io/badge/License-${response.license}-yellow.svg)](https://opensource.org/licenses/${response.license})
 # ${response.title}
-<hr>
 
 ## Description: 
     ${response.description}
 <hr>
     
 ## Table of Contents
-    ${response.tableContents}
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contribution](#Contribution)
+* [Tests](#Tests)
+* [Questions](#Questions)
 <hr>
     
 ## Installation
@@ -105,15 +115,13 @@ function generateMD(response) {
     ${response.usage}
 <hr>
     
-## License
-    ${response.license}
-<hr>
-    
 ## Test
     ${response.tests}
 <hr>
     
 ## Questions
-    ${response.questions}
+    Contact me at: 
+    https://github.com/${response.Github}
+    Email Address: ${response.email}
     `
 };
